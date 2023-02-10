@@ -41,5 +41,13 @@ class CheckoutController extends Controller
         );
         return redirect('/confirm');
     }
+
+    public function confirm()
+    {
+        
+        return inertia(
+            'Confirm'
+        );
+    }
 }
 

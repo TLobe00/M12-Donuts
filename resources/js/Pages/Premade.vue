@@ -25,7 +25,7 @@ const props = defineProps({
                         </div>
                     </div>
                     <div class="mt-6">
-                        <a href="" class="relative flex bg-gray-100 border border-transparent rounded-md py-2 px-8 items-center justify-center text-sm font-medium text-gray-900 hover:bg-gray-200"
+                        <a :href="'/checkout/'+donut.id" class="relative flex bg-gray-100 border border-transparent rounded-md py-2 px-8 items-center justify-center text-sm font-medium text-gray-900 hover:bg-gray-200"
                         >Buy Now</a
                         >
                     </div>

@@ -21,3 +21,10 @@ Route::prefix('premade')->group(function () {
         Route::get('', 'index');
     });
 });
+Route::prefix('checkout')->group(function () {
+    Route::controller(CheckoutController::class)->group(function () {
+        Route::get('{id}', 'index');
+        Route::post('', 'store');
+    });
+});
+Route::get('confirm', [CheckoutController::class, 'confirm']);
